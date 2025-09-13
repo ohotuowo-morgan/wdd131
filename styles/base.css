@@ -1,0 +1,87 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  margin: 0;    
+  padding: 0;
+  line-height: 1.6;
+}
+
+header{
+  text-align: center;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  background: #52178a;
+  color:  #fff;
+}
+
+nav{
+  padding: 0;
+  margin: 0;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: black;
+  margin: 0;
+}
+
+.navigation a{
+
+  display: block;
+  padding: 0.75rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.navigation a:hover{
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+
+.card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 0.2rem;
+  background: #52178a;
+  color: #fff;
+}
+
+footer p{
+  margin: 0;
+}
