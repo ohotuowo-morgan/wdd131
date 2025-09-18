@@ -100,6 +100,11 @@ main h1 {
   margin-bottom: 1rem;
 }
 
+main h2{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 .container{
   display: grid;
   grid-template-columns: 1fr;
