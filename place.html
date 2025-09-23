@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Loaction</title>
+    <meta name="description" content="">
+    <meta name="description" content="Ohotuowo Morgan Agrinya">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>France - Paris</h1>
+    </header>
+
+    <main>
+        <picture class="hero">
+            <source media="(min-width: 800px)" srcset="images/large_paris.webp">
+            <img src="images/smallparis.webp" alt="The eiffel tower" width="500">
+        </picture>
+
+        <div class="container">
+            <section class="card">
+                <h2>Data</h2>
+                <ul>
+                    <li>Area: 244,288 sq mi </li>
+                    <li>Population: 68.52 million </li>
+                    <li>Capital: Paris</li>
+                    <li>Languages: French, English</li>
+                    <li>Currency: Euro (€)</li>
+                    <li>Time Zone: CET → UTC+1</li>
+                    <li>Calling Code: +33</li>
+                    <li>Internet TLD: .fr</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Weather <span class="emoticon"></span></h2>
+                <img src="images/sunny.svg" alt="Weather icon" >
+                <ul>
+                    <li>Temperature: <span class="temp">10</span>°C</li>
+                    <li>Conditions: Cloudy</li>
+                    <li>Wind: <span class="wnd">5</span>km/h</li>
+                    <li class="windchill"></li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> Ohotuowo Morgan Agrinya Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
