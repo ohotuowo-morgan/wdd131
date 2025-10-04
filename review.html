@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <meta name="description" content="A prooduct review form page that employs good form design practices">
+    <meta name="author" content="Ohotuowo Morgan Agrinya">
+    <link rel="stylesheet" href="/styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <main>
+        <p>Your review has been submitted successfully.</p>
+        <p>You have submitted <span id="reviewCount"></span> review(s).</p>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> Ohotuowo Morgan Agrinya Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // localStorage counter
+        let count = localStorage.getItem("reviewCount") || 0;
+        count++;
+        localStorage.setItem("reviewCount", count);
+        document.getElementById("reviewCount").textContent = count;
+    </script>
+</body>
+
+</html>
