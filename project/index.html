@@ -1,36 +1,102 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiriku homepage</title>
-    <meta name="description" content="">
-    <meta name="author" content="Ohotuowo Morgaan Agrinya"> 
+    <meta name="description" content="WDD131 final project by Morgan on web3 exploring development concept">
+    <meta name="author" content="Ohotuowo Morgaan Agrinya">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 </head>
+
 <body>
     <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+        <nav class="navigation">
+            <a id="hamburger" href="#"></a>
+            <img src="./images/logo1.jpg" alt="Kiriku logo">
+            <div class="navlink">
+                <a href="index.html">Home</a>
+                <a href="defi.html">DeFi</a>
+                <a href="smartcontract.html">Smart Contract</a>
+                <a href="blockchain.html">BlockChain</a>
+            </div>
         </nav>
-
     </header>
-    
+
+    <div class="sidebar">
+        <div class="navlink">
+            <a href="index.html">Home</a>
+            <a href="defi.html">DeFi</a>
+            <a href="smartcontract.html">Smart Contract</a>
+            <a href="blockchain.html">BlockChain</a>
+        </div>
+    </div>
+
     <main>
+        <h1> WEB3 UNLOCKED</h1>
+
+        <section class="hero">
+            <p>
+                Discover the next evolution of the internet, a world where users own their data, digital assets have
+                <br>
+                real value, and innovation happens without middlemen. <br>
+
+                This site is your beginner-friendly guide to understanding Web3. You'll learn how blockchain technology
+                <br>
+                works, explore smart contracts and decentralized apps (dApps), and see how digital ownership is <br>
+                reshaping the online world. <br>
+
+                Whether you're completely new to Web3 or just curious about what's next, you're in the right place. <br>
+                Start exploring and see how the internet is being reimagined, <strong>one block at a time.</strong>
+            </p>
+            <img src="./images/block.svg" alt="Image of a boy with building blocks">
+        </section>
+
+        <section class="comparison">
+            <h2>Understanding Web2 vs Web3</h2>
+            <p>The internet has evolved from centralized platforms (Web2) to a decentralized future (Web3). <br>
+                Here's a quick look at what makes them different.
+            </p>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>Web2: The Centralized Web</h3>
+                    <p>In Web2, data and content are controlled by major companies like Google, Meta, and Amazon. Users
+                        rely on centralized servers and have little control over their personal data.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Web3: The Decentralized Web</h3>
+                    <p>Web3 is built on blockchain technology. It allows users to own their data, trade digital assets
+                        directly, and interact through decentralized applications (dApps).</p>
+                </div>
+
+                <div class="card">
+                    <h3>Key Differences</h3>
+                    <ul>
+                        <li><strong>Ownership:</strong> Web2 = Companies own data, Web3 = Users own data</li>
+                        <li><strong>Structure:</strong> Web2 = Centralized, Web3 = Decentralized</li>
+                        <li><strong>Currency:</strong> Web2 = Traditional money, Web3 = Crypto and tokens</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
     <footer>
-
+        <p>©<span id="currentyear"></span> Ohotuowo Morgan Agrinya Nigeria</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>
