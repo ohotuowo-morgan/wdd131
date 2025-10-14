@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="">
-    <script src="" defer></script>
+    <link rel="stylesheet" href="./styles/blockchain.css">
+    <script src="./scripts/blockchain.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav class="navigation">
             <a id="hamburger" href="#"></a>
-            <img src="./images/logo1.jpg" alt="Kiriku logo" width="50">
+            <img src="./images/logo1.jpg" alt="Kiriku logo" loading="lazy">
             <div class="navlink">
                 <a href="index.html">Home</a>
                 <a href="defi.html">DeFi</a>
@@ -38,7 +40,39 @@
     </div>
 
     <main>
+        <div class="header">
+            <h1>Understanding Blockchain Technology</h1>
+            <p>The foundation of Web3 — secure, transparent, and decentralized.</p>
+        </div>
 
+        <section id="intro">
+            <h2>What is Blockchain?</h2>
+            <p>
+                Blockchain is a distributed digital ledger that records transactions across multiple computers securely
+                and transparently.
+                Instead of relying on a central authority, blockchain uses cryptography and consensus mechanisms to
+                maintain trust.
+            </p>
+        </section>
+
+        <section id="features">
+            <h2>Key Features of Blockchain</h2>
+            <ul id="featureList"></ul>
+        </section>
+
+        <section id="explore">
+            <h2>Explore Blockchain Networks</h2>
+            <label for="networkSelect">Choose a Blockchain:</label>
+            <select id="networkSelect">
+                <option value="">Select a network</option>
+                <option value="bitcoin">Bitcoin</option>
+                <option value="ethereum">Ethereum</option>
+                <option value="polygon">Polygon</option>
+                <option value="solana">Solana</option>
+            </select>
+
+            <div id="networkInfo"></div>
+        </section>
     </main>
 
     <footer>
@@ -46,4 +80,5 @@
         <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>

@@ -12,8 +12,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(120deg,  var(--accent1), var(--secondary-color));
-    /* background: linear-gradient(120deg, white, silver, blue); */
+    background: linear-gradient(120deg, var(--accent1), var(--secondary-color));
 }
 
 header {
@@ -25,7 +24,6 @@ header {
 }
 
 main {
-    /* max-width: 950px; */
     width: 100%;
     margin: 1rem auto;
     margin-top: 110px;
@@ -142,7 +140,7 @@ nav a:hover {
     transition: 0.5s ease;
 }
 
-.sidebar a:hover{
+.sidebar a:hover {
     display: block;
     font-weight: bold;
     font-size: larger;
@@ -159,6 +157,7 @@ nav a:hover {
 h1 {
     text-align: center;
     color: var(--primary-color);
+    font-family: "Roboto", sans-serif;
     /* color: var(--secondary-color); */
     padding: 1rem;
 }
@@ -193,7 +192,7 @@ h1 {
 
 }
 
-.comparison p{
+.comparison p {
     padding: 1rem;
 }
 
@@ -239,7 +238,6 @@ footer {
     background-color: #fff;
     color: var(--primary-color);
     border-top: 0.5px solid var(--accent1);
-
 }
 
 footer p {

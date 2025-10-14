@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="">
-    <script src="" defer></script>
+    <link rel="stylesheet" href="./styles/smartcontract.css">
+    <script src="./scripts/smartcontract.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav class="navigation">
             <a id="hamburger" href="#"></a>
-            <img src="./images/logo1.jpg" alt="Kiriku logo" width="50">
+            <img src="./images/logo1.jpg" alt="Kiriku logo" loading="lazy">
             <div class="navlink">
                 <a href="index.html">Home</a>
                 <a href="defi.html">DeFi</a>
@@ -38,7 +40,57 @@
     </div>
 
     <main>
+        <form method="get" action="review.html">
+            <h2>Deploy a Smart Contract</h2>
+            <p>Fill in the details below to simulate your smart contract deployment on a blockchain.</p>
 
+            <label>
+                Contract Name
+                <input type="text" name="contractName" id="contractName" placeholder="Enter contract name" required>
+            </label>
+
+            <label>
+                Blockchain Network:
+                <select name="network" id="network" required>
+                    <option value="" disabled selected>Select a Network</option>
+                </select>
+            </label>
+
+            <fieldset class="type">
+                <legend>Contract Type</legend>
+                <label><input type="radio" name="type" value="erc20" required> ERC-20 (Token)</label>
+                <label><input type="radio" name="type" value="nft"> ERC-721 (NFT)</label>
+                <label><input type="radio" name="type" value="defi"> DeFi Contract</label>
+                <label><input type="radio" name="type" value="bnb20"> BNB(bep20)</label>
+                <label><input type="radio" name="type" value="bsc20"> BSC(bep20)</label>
+            </fieldset>
+
+            <fieldset class="features">
+                <legend>Optional Features</legend>
+                <label><input type="checkbox" name="features" value="minting"> Minting</label>
+                <label><input type="checkbox" name="features" value="staking"> Staking</label>
+                <label><input type="checkbox" name="features" value="governance"> Governance</label>
+                <label><input type="checkbox" name="features" value="burning"> Token Burning</label>
+            </fieldset>
+
+            <label for="deploymentDate">Planned Deployment Date:
+                <input type="date" id="deploymentDate" name="deploymentDate" required>
+            </label>
+
+            <div>
+                <label for="description">Smart Contract Description:</label>
+                <textarea id="description" name="description" rows="4"
+                    placeholder="Describe the purpose of your contract..."></textarea>
+            </div>
+
+            <div>
+                <label for="developerName">Developer/Team Name:</label>
+                <input type="text" id="developerName" name="developerName" placeholder="Your name or team name">
+            </div>
+
+            <input type="submit" value="Submit Contract">
+
+        </form>
     </main>
 
     <footer>
