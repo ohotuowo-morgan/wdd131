@@ -17,8 +17,6 @@ sidebarLinks.forEach(link => {
     });
 });
 
-// 
-// Array of blockchain objects
 const blockchains = [
     {
         name: "Bitcoin",
@@ -50,7 +48,6 @@ const blockchains = [
     }
 ];
 
-// Array of blockchain features
 const features = [
     "Decentralization",
     "Transparency",
@@ -59,13 +56,13 @@ const features = [
     "Smart Contracts"
 ];
 
-// Function 1: Display blockchain features using array methods
+// Display blockchain features using array methods
 function displayFeatures() {
     const featureList = document.getElementById("featureList");
     featureList.innerHTML = features.map(feature => `<li>${feature}</li>`).join("");
 }
 
-// Function 2: Show blockchain info dynamically
+// Show blockchain info dynamically
 function showNetworkInfo() {
     const select = document.getElementById("networkSelect");
     const infoDiv = document.getElementById("networkInfo");
@@ -80,7 +77,6 @@ function showNetworkInfo() {
         // Find the blockchain object using array method
         const network = blockchains.find(b => b.name.toLowerCase() === selected);
 
-        // Conditional branching
         if (network) {
             infoDiv.innerHTML = `
                 <div class="network-card">
@@ -98,7 +94,7 @@ function showNetworkInfo() {
     });
 }
 
-// Function 3: Calculate how long the network has existed
+// Calculate how long the network has existed
 function getNetworkAge(year) {
     const currentYear = new Date().getFullYear();
     const age = currentYear - year;
