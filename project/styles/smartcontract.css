@@ -183,7 +183,7 @@ label,
 legend {
     font-weight: bold;
     display: block;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 select,
@@ -211,28 +211,22 @@ textarea {
     resize: vertical;
 }
 
-/* Rating fieldset */
-.rating {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
+/* contract fieldset */
 
-.rating legend {
+.type legend {
     text-align: left;
     margin-bottom: 0.5rem;
 }
 
-.rating label {
+.type label {
     margin-right: 1rem;
-    font-size: 1.2rem;
     cursor: pointer;
 }
 
 /* Features checkboxes */
 .features label {
     display: block;
-    margin: 0.25rem 0;
+    margin-right: 1rem;
 }
 
 /* Submit button */

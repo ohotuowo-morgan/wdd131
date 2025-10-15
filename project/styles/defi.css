@@ -182,6 +182,7 @@ section h2 {
 
 section img {
     width: 300px;
+    height: auto;
     margin: 1rem auto;
     border-radius: 8px;
 }
